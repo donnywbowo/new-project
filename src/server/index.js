@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+const {host, port} = require('../../config')
 const dbConnect = require('../connection/dbConnect');
 const router = require('../routers');
 
@@ -11,4 +12,4 @@ router(app);
 dbConnect(mongoose);
 
 
-app.listen(3000, () => console.log('server running'));
+app.listen(port, () => console.log(`server running at http://${host}/${host}:${port}`));
