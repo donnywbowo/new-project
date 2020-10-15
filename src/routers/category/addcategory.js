@@ -1,9 +1,9 @@
 const express = require('express');
 const { Category } = require('../../models')
-const { addcategorySchema } = require('../../schema')
+const { addCategorySchema } = require('../../schema/category')
 const router = express.Router();
 
-router.post('/addcategory' , async (req,res) => {
+router.post('/addCategory' , async (req,res) => {
     try {
         const { error, value } = addcategorySchema.validate(req.body)
         if (error) {

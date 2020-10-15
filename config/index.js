@@ -6,3 +6,5 @@ const config = {
     key: 'yourprivatekey'
 }
 module.exports = config;
+
+// cara mengupdate github

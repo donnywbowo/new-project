@@ -1,9 +1,9 @@
 const express = require('express');
 const { Category } = require('../../models')
-const { addcategorySchema } = require('../../schema')
+const { addCategorySchema } = require('../../schema')
 const router = express.Router();
 
-router.get('/getcategory' , async (req,res) => {
+router.get('/getCategory' , async (req,res) => {
     try {
     const hasil = await Category.find({}) //find untuk mencari semua file category/ mencari file yang ada 
     res.send(hasil);                       // didalam database

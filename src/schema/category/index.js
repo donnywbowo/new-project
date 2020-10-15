@@ -1,5 +1,5 @@
-const addcategorySchema = require('./addcategorySchema') 
+const addCategorySchema = require('./addCategorySchema') 
 
 module.exports = {
-    addcategorySchema
+    addCategorySchema
 };

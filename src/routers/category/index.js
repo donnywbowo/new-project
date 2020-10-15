@@ -1,8 +1,8 @@
-const addcategory = require('./addcategory');
-const getcategory = require('./getcategory');
+const addCategory = require('./addCategory');
+const getCategory = require('./getCategory');
 
 module.exports = [
-    addcategory,
-    getcategory
+    addCategory,
+    getCategory
     
 ];

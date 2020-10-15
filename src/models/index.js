@@ -1,6 +1,8 @@
 const Users = require('./userModel');
-const Category = require('./categorymodel');
+const Category = require('./categoryModel');
+const News = require('./newsModel')
 module.exports = {
     Users,
-    Category
+    Category,
+    News
 };
