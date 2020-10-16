@@ -3,8 +3,7 @@ require('dotenv').config();
 const config = {
     host: process.env.HOST,
     port: process.env.PORT,
-    key: 'yourprivatekey'
-}
-module.exports = config;
+    keyPrivasi: process.env.KEY
 
-// cara mengupdate github
+};
+module.exports = config;
