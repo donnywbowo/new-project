@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
-const {host, port} = require('../../config')
+const { host, port } = require('../../config')
 const dbConnect = require('../connection/dbConnect');
 const router = require('../routers');
 

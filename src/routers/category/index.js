@@ -4,5 +4,5 @@ const getCategory = require('./getCategory');
 module.exports = [
     addCategory,
     getCategory
-    
+
 ];

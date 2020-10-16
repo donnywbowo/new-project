@@ -7,10 +7,10 @@ const { Users } = require('../../models');
 const { loginSchema } = require('../../schema');
 const router = express.Router();
 
-router.post('/users/login' , async (req,res) => {
+router.post('/users/login', async (req, res) => {
     try {
         const { error, value } = loginSchema.validate(req.body)
-        const {email, password} =value;
+        const { email, password } = value;
         if (error) {
             throw new Error(error.message);
         }
@@ -27,12 +27,12 @@ router.post('/users/login' , async (req,res) => {
 
         const token = jwt.sign(response, keyPrivasi);
         res.send({ ...response, token });
-        res.send( user );
-    } catch(e) {
-        res.send({message: e.message});
+        res.send(user);
+    } catch (e) {
+        res.send({ message: e.message });
     }
- });
- 
+});
+
 module.exports = router; // agar file dapat diakses dari luar wajib ada di setiap file.js
 
 
